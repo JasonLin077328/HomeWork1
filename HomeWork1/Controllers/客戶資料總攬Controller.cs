@@ -15,6 +15,7 @@ namespace HomeWork1.Controllers
         private Entities db = new Entities();
 
         // GET: 客戶資料總攬
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.客戶資料總攬.ToList());

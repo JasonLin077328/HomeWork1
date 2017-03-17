@@ -14,9 +14,12 @@ namespace HomeWork1.Controllers
     {
         private 客戶資料Repository oRepository = RepositoryHelper.Get客戶資料Repository();
         // GET: 客戶資料
+
+        [Authorize]
         public ActionResult Index(string KeyWord)
         {
             return View(oRepository.GetAll(KeyWord));
+
         }
 
         // GET: 客戶資料/Details/5

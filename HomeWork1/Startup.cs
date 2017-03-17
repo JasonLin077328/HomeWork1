@@ -1,14 +1,14 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(HomeWork1.Startup))]
-namespace HomeWork1
+[assembly: OwinStartupAttribute(typeof(HamaDinSiteV.Startup))]
+namespace HamaDinSiteV
 {
     public partial class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            //ConfigureAuth(app);
         }
     }
 }
